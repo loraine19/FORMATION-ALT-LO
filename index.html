@@ -1,0 +1,213 @@
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS&family=Readex+Pro:wght,HEXP@160..700,0..100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playwrite+AU+TAS&family=Readex+Pro:wght,HEXP@160..700,0..100&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="medias/marslogo.ico">
+<link rel="apple-touch-icon" href="medias/marslogo.png">
+<!--meta data --> 
+<title>Delta Festival - Marseille</title>
+<meta name="description" content="Festival de musique sur la plage à Marseille">
+
+</head>  
+    <body>
+        <nav>
+            <div class="navbar">
+                <span><a href="#ban"><span class="material-symbols-outlined">
+                    music_note
+                    </span></a></span>
+                <span><a href="#cal"><span class="material-symbols-outlined">
+                    event_available
+                    </span><span class="none">DATES</span></a></span>
+                <span><a href="#prog"><span class="material-symbols-outlined">
+                    person
+                    </span><span class="none">ARTISTES</span></a></span>
+                <span><a href="#bil"><span class="material-symbols-outlined">
+                    local_activity
+                    </span><span class="none">BILLETS</span></a></span>
+                <span><a href="#cont"><span class="material-symbols-outlined">
+                    email
+                    </span><span class="none">CONTACT</span></a></span>
+                <span><a href="#cart"><span class="material-symbols-outlined">
+                    map
+                    </span><span class="none">CARTE</span></a></span>
+            </div>
+        </nav>
+        <header>
+            <audio id="musicplayer" autoplay>
+                <source src="./Karmon.mp3">
+              </audio>
+            <div class="bgimg banner" id="ban">
+                <h1>Delta Festival</h1>
+            </div>
+            <p>
+                Préparez vous à vivre les 10 ans du delta festival à Marseille en 2024 !<br>
+                Plus de 250 artistes, 5 scènes, 10 villages thématiques...
+            </p>
+
+            <section id="cal">
+                <h2>Agenda</h2>
+                <div class="col3">
+                    <span class="material-symbols-outlined">event_available
+                    </span><br><br>
+                    DU 05<br>AU 08 SEPTEMBRE
+                </div>
+                <div class="col3">
+                    <span class="material-symbols-outlined">schedule
+                    </span><br><br>
+                    À PARTIR DE 15h00<br>JUSQU'À 23H00
+                </div>
+            </section>
+        </header>
+
+        <section id="prog">
+            <h2>Artistes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><img class="artist" src="medias/artist.png" alt="artiste1" title="Artiste 1"></th>
+                            <th><img class="artist" src="medias/artist.png" alt="artiste1" title="Artiste 1"></th>
+                            <th><img class="artist" src="medias/artist.png" alt="artiste1" title="Artiste 1"></th>
+                        </tr>
+                        <tr>
+                            <th>Artiste 1</th>
+                            <th>Artiste 2</th>
+                            <th>Artiste 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Le 5 septembre</td>
+                            <td>Le 6 septembre</td>
+                            <td>Le 7 septembre</td>
+                        </tr>
+                        <tr>
+                            <td>à partir de 18h00</td>
+                            <td>à partir de 18h00</td>
+                            <td>à partir de 18h00</td>
+                        </tr>
+                    </tbody>
+                </table>    
+                     
+        </section>
+        <section id="bil">
+            <h2>Billets</h2>
+            <div>
+                <div class="col3 ticket">
+                    <h3><span class="material-symbols-outlined">
+                        local_activity
+                        </span><br>BILLET 1 JOURNÉE</h3>
+                    <strong>60€</strong>
+                    <p>Il reste 200 places </p>
+                    <button onclick="javascript:alert('Merci pour votre commande');">ACHETER</button>
+                </div>                <div class="col3 ticket">
+                    <h3><span class="material-symbols-outlined">
+                        local_activity
+                        </span><br>BILLET 2 JOURNÉES</h3>
+                    <strong>100€</strong>
+                    <p>Il reste 150 places </p>
+                    <button onclick="javascript:alert('Merci pour votre commande');">ACHETER</button>
+                </div>                <div class="col3 ticket">
+                    <h3><span class="material-symbols-outlined">
+                        local_activity
+                        </span><br>BILLET 3 JOURNÉES </h3>
+                    <strong>150€</strong>
+                    <p>Il reste 100 places </p>
+                    <button onclick="javascript:alert('Merci pour votre commande');">ACHETER</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cont">
+            <h2>Contact</h2>
+                <div>
+                    <form action="javascript:alert('Merci pour votre message');">
+                        <div class="col3">
+                            <label class="left" for="user">Votre nom :</label><br>
+                            <input type="text" name="name" id="user" value="Votre nom">
+                            <label class="left" for="email">Votre email :</label><br>
+                            <input type="email" name="mail" id="email" value="Votre email:">
+                            <label class="left" for="tel">Votre numéro :</label><br>
+                            <input type="tel" name="phone" id="tel" value="Votre numéro:">
+                        </div>
+                        <div class="col3">
+                            <label for="about">Sujet:</label><br>
+                            <select name="subjet" id="about">
+                                <option>Billetterie</option>
+                                <option>Organisation</option>
+                                <option>SAV</option>
+                                <option>Remboursement</option>
+                            </select>
+                            
+                            <fieldset>
+                                <legend>Contact par : <br></legend>
+                                <div class="col2">
+                                    <label for="contact">
+                                        <span class="material-symbols-outlined">call
+                                        </span><br>Télèphone</label>
+                                    <input type="checkbox" id="byphone" name="contact" value="true">
+                                </div>
+                                <div class="col2">
+                                    <label for="contact">
+                                        <span class="material-symbols-outlined"> email
+                                        </span><br>Email</label><br>
+                                    <input type="checkbox" id="bymail" name="contact" value="true">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col2">
+                        <label class="left" for="user">Envoyer votre message:</label><br>
+                        <input type="submit" name="send" id="submit" value="Envoyer votre message">
+                        </div>    
+                    </form>        
+                </div>
+            </section>
+
+
+            <section id="cart">
+                <h2>Carte</h2>
+                <iframe class="carte" src="https://www.openstreetmap.org/export/embed.html?bbox=5.368500351905824%2C43.26035058052832%2C5.373521447181702%2C43.262987493472735&amp;layer=mapnik"></iframe><br>
+                <a href="https://www.openstreetmap.org/#map=18/43.26167/5.37101">Ouvrire la carte</a>
+            </section>
+
+            <footer>
+                <div class="col2">
+                    <h3 class="none">SPONSORS</h3>
+                    <div class="col4">
+                        <a href="https://www.marseille.fr/"><img class="logo" src="medias/marslogo.png" alt="Marseille Logo" title="visiter le site de Marseille"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.coca-cola.com/fr/fr"><img class="logo" src="medias/coca.png" alt="Coca-Cola Logo" title="visiter le site de Coca-Cola"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.marseille.fr/"><img class="logo" src="medias/marslogo.png" alt="Marseille Logo" title="visiter le site de Marseille"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.coca-cola.com/fr/fr"><img class="logo" src="medias/coca.png" alt="Coca-Cola Logo" title="visiter le site de Coca-Cola"></a>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h3 class="none">RÉSEAUX SOCIAUX</h3>
+                    <div class="col4">
+                        <a href="https://www.facebook.fr/"><img class="logo" src="medias/facebook.png" alt="Facebook Logo" title="visiter Facebook"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.twitter.com"><img class="logo" src="medias/x.png" alt="X logo" title="visiter X"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.instagram.com"><img class="logo" src="medias/insta.png" alt="Instagram Logo" title="visiter Instagram"></a>
+                    </div>
+                    <div class="col4">
+                        <a href="https://www.youtube.com"><img class="logo" src="medias/youtube.png" alt="Youtube Logo" title="visiter Youtube"></a>
+                    </div>
+                </div>
+
+            </footer>          
+
+        </body>
+</html>
